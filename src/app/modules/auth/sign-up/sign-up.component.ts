@@ -21,6 +21,7 @@ export class AuthSignUpComponent implements OnInit
     };
     signUpForm: UntypedFormGroup;
     showAlert: boolean = false;
+    showLoader: boolean = true;
 
     /**
      * Constructor
@@ -51,6 +52,10 @@ export class AuthSignUpComponent implements OnInit
                 agreements: ['', Validators.requiredTrue]
             }
         );
+
+        setTimeout(()=>{
+            this.showLoader = false;
+        }, 3000);
     }
 
     // -----------------------------------------------------------------------------------------------------
