@@ -1,0 +1,82 @@
+<div class="flex flex-col md:justify-start flex-auto " >
+
+
+    <div style="width: 70%;background: #001d30;margin: auto;height: 80%;" class="flex">
+
+            <div class="flex" style="    border-radius: 50%;
+            background-color: #8d6e63;
+            width: 200px;
+            height: 200px;
+            margin: auto;">
+
+                <p style="margin: auto;position: relative;
+                color: white;
+                font-size: 80px;
+                font-weight: 400;">A   <mat-icon style="position: absolute;top: 121px;left: 16px;color:white"  svgIcon="mic_off"></mat-icon></p>
+
+
+
+            </div>
+
+
+    </div>
+
+        <div style="margin-top: auto;background: #dbdbdb24;height: 70px;" class="flex boarder-t">
+            <div class="example-button-container text-center" style="display: flex;margin: auto;width: 90%;justify-content: space-between;">
+               <div style="width: calc(100% / 3);">
+
+               </div>
+
+               <div style="width: calc(100% / 3);">
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:microphone"></mat-icon></button>
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:video-camera"></mat-icon></button>
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:hand"></mat-icon></button>
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:share"></mat-icon></button>
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:dots-vertical"></mat-icon></button>
+                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:phone"></mat-icon></button>
+               </div>
+
+               <div style="width: calc(100% / 3);text-align: right;margin-top:10px">
+
+                <mat-icon  style="color: #404040 !important;" class="icon-size-7 mr-6"  matBadge="1" svgIcon="heroicons_solid:user-group"></mat-icon>
+                <mat-icon style="color: #404040 !important;" class="icon-size-7 mr-6" svgIcon="chat"></mat-icon>
+                <mat-icon style="color: #404040 !important;" class="icon-size-7 mr-6" matBadge="15" svgIcon="heroicons_solid:cog"></mat-icon>
+
+
+               </div>
+              </div>
+        </div>
+    </div>
+
+    <div *ngIf="showLoader"  style="background: #001d30;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
+
+        <div style="margin: auto;
+
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: auto;">
+        <div class="mt-8 text-4xl tracking-tight leading-tight" style="font-size: 2.75rem !important;color: white;position: relative;
+        top: 67px;">Joining Room</div>
+        <div style="font-family: 'Google Sans',Roboto,Arial,sans-serif;    position: relative;
+        top: 67px;
+        font-size: 1.125rem;
+        letter-spacing: 0;
+        line-height: 1.5rem;
+        color: #e1dbdb;
+        max-width: 30rem;
+        text-align: center;
+        margin-top: 9px;">
+            You'r joining as an anonymous</div>
+            <img src="assets/images/dot.gif" style="width:300px">
+
+
+        </div>
+    </div>

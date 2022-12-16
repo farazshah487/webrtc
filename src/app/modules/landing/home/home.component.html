@@ -37,22 +37,24 @@
 
                 <div class="flex">
 
-                        <button style="border-radius: 6px !important; padding:0px 40px !important" mat-flat-button [color]="'primary'">
+                        <button [matMenuTriggerFor]="menu" style="border-radius: 6px !important; padding:0px 40px !important" mat-flat-button [color]="'primary'">
                             <mat-icon class="icon-size-7" svgIcon="video_call"></mat-icon>
                             <span class="ml-2">New Meeting</span>
                         </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item (click)="detailPage()">   <mat-icon class="icon-size-5" svgIcon="live_tv"></mat-icon> Start an instance meeting</button>
+                            <button mat-menu-item> <mat-icon class="icon-size-5" svgIcon="access_time"></mat-icon> Schedule a meeting</button>
+                          </mat-menu>
 
-                        <mat-form-field [formControlName]="'email'" appearance="fill" class="flex-auto gt-xs:pr-3 px-1 w-full fuse-mat-dense">
-                            <textarea matInput cdkTextareaAutosize placeholder="Enter a code or link"></textarea>
+                        <mat-form-field  appearance="fill" class="flex-auto gt-xs:pr-3 px-1 w-full fuse-mat-dense">
+                            <textarea [formControlName]="'email'" matInput cdkTextareaAutosize placeholder="Enter a code or link"></textarea>
                             <mat-icon class="icon-size-5" matPrefix svgIcon="keyboard"></mat-icon>
                         </mat-form-field>
 
-                        <button mat-button color="primary"><mat-icon class="icon-size-5" svgIcon="headphones"></mat-icon></button>
+                        <button mat-button color="primary"  (click)="detailPage()" ><mat-icon class="icon-size-5" svgIcon="headphones"></mat-icon></button>
                 </div>
 
-
-
-                <div class="flex ">
+                <!-- <div class="flex ">
                     <button style="border-radius: 6px !important; padding:0px 40px !important" mat-flat-button [color]="'primary'">
                         <mat-icon class="icon-size-7" svgIcon="video_call"></mat-icon>
                         <span class="ml-2">Instant Conference</span>
@@ -61,13 +63,7 @@
                         <mat-icon class="icon-size-7" svgIcon="video_call"></mat-icon>
                         <span class="ml-2">Schedule a Conference</span>
                     </button>
-                 </div>
-
-
-
-
-
-
+                 </div> -->
 
                 <!-- <button
                     class="fuse-mat-button-large w-full mt-3"
