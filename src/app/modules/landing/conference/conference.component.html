@@ -3,7 +3,7 @@
 
     <div style="width: 70%;background: #001d30;margin: auto;height: 80%;" class="flex">
 
-            <div class="flex" style="    border-radius: 50%;
+            <div class="flex" style="border-radius: 50%;position:relative;
             background-color: #8d6e63;
             width: 200px;
             height: 200px;
@@ -13,10 +13,22 @@
                 color: white;
                 font-size: 80px;
                 font-weight: 400;">A   <mat-icon style="position: absolute;top: 121px;left: 16px;color:white"  svgIcon="mic_off"></mat-icon></p>
-
-
-
+                <div style="position: absolute;
+                color: white;
+                margin: auto;
+                bottom: -40px;
+                text-align: center;
+                left: 58px;
+                font-size: 18px;"><p>Anonymous</p></div>
+                <div style="    position: absolute;
+                color: white;
+                margin: auto;
+                bottom: -69px;
+                text-align: center;
+                left: 87px;
+                font-size: 16px;"><p>{{display }}</p></div>
             </div>
+
 
 
     </div>
@@ -33,7 +45,7 @@
                    <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:hand"></mat-icon></button>
                    <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:share"></mat-icon></button>
                    <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:dots-vertical"></mat-icon></button>
-                   <button mat-mini-fab color="primary" class="mr-2"><mat-icon svgIcon="heroicons_solid:phone"></mat-icon></button>
+                   <button mat-mini-fab color="primary" style="background: #bb1918;" class="mr-2"><mat-icon svgIcon="call_end"></mat-icon></button>
                </div>
 
                <div style="width: calc(100% / 3);text-align: right;margin-top:10px">
